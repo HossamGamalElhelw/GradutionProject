@@ -1,0 +1,19 @@
+{
+    "devices": {
+      "led1": {
+        "name": "Led1",
+        "status": true,
+        "type": "light"
+      },
+      "bulb2": {
+        "name": "Bulb-2",
+        "status": false,
+        "type": "light"
+      },
+      "fan1": {
+        "name": "Fan-1",
+        "status": false,
+        "type": "fan"
+      }
+    }
+}

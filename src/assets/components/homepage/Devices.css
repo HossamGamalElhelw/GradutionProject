@@ -1,0 +1,21 @@
+.devices{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.device_content{
+    width: 15%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #252525;
+    border-radius: 15px;
+}
+.logo_switch{
+    display: flex;
+    justify-content: space-between;
+}
+.fan_img{
+    width: 40px;
+    height: 40px;
+}

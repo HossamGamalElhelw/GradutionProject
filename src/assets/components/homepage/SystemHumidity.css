@@ -1,0 +1,46 @@
+
+.system_Humidity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 2rem;
+    background-color: #252525;
+    border-radius: 15px;
+    height: 30vh;
+}
+.btn_control{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.window_title{
+    font-size: 1.5rem;
+}
+.humidity_value_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.humidity_picture{
+    width: 2rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(to right ,#A1FFFF,#EDBAFF);
+}
+.humidity_img{
+    width: 1.5rem;
+}
+#humidity_value{
+    font-size: 2rem;
+    background: linear-gradient(to right, #A1FFFF, #EDBAFF);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    margin: 10px 0;
+}

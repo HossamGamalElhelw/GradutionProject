@@ -1,0 +1,118 @@
+.temp_bar_container {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.system_temp{
+    width: 20%;
+    padding: 2rem;
+    background-color: #252525;
+    border-radius: 15px;
+    height: 30vh;
+}
+.control_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.airConditioner{
+    font-size: 1.5rem;
+}
+
+#temp_value{
+    font-size: 2rem;
+    background: linear-gradient(to right, #A1FFFF, #EDBAFF);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    margin: 10px 0;
+}
+
+.temp_read{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temp_text_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ice_picture{
+    width: 2rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(to right ,#A1FFFF,#EDBAFF);
+}
+.ice_img{
+    width: 1.5rem;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px; 
+    background: linear-gradient(to right, #A1FFFF, #EDBAFF);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+.range-labels {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    right: 0;
+}
+
+.label {
+    position: absolute;
+    bottom: -10px; 
+    text-align: center;
+}
+
+.label-18 {
+    left: 0%;
+}
+
+.label-32 {
+    right: 0%;
+}
