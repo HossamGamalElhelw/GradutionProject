@@ -1,7 +1,5 @@
 import React from 'react'
 import Header from './homepage/Header';
-import { Chart } from 'chart.js';
-import Rooms from './homepage/Rooms';
 import Devices from './homepage/Devices';
 import SystemHumidity from './homepage/SystemHumidity';
 import SystemTemp from './homepage/SystemTemp';
@@ -16,7 +14,6 @@ function HomePage() {
       </aside>
       <main>
         <Header />
-        <Rooms/>
         <Using />
         <Devices />
       </main> 

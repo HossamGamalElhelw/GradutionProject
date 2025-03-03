@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #3F3F3F;
+    background: linear-gradient(to right ,#A1FFFF,#EDBAFF);
 }
 .title_logo{
     font-size: 1.7rem;

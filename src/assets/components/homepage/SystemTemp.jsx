@@ -1,13 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './SystemTemp.css'
 import SwitchComponent from '../../utils/Switch';
+import { getDatabase, ref, set, onValue } from "firebase/database";
+import { useAuth } from '../context/AuthProvider';
 
 function SystemTemp() {
+    const {currentUser,logout} = useAuth();
+    const db = getDatabase();
+    const [fan, setFan] = useState(false);
+
+    const writeFanState = (state) => {
+            if(currentUser){
+                set(ref(db, `users/${currentUser.uid}/fan`), state)
+                .then(() =>{
+                    console.log(`${fan} state updated to ${state}`);
+                })
+                .catch((error)=>{
+                    console.error("Error writing Fan state: ", error);
+                })
+        }
+        }
+        const readFanState = () => {
+            if (currentUser) {
+                const fanRef = ref(db, `users/${currentUser.uid}/fan`);
+                onValue(fanRef, (snapshot) => {
+                    const data = snapshot.val();
+                    setFan(data !== null ? data : false);
+                });
+            }
+        };
+        const toggleFan = (newState) => {
+            console.log("Toggling fan to:", newState);
+            setFan(newState);
+            writeFanState(newState);
+        };
+    
+        useEffect(() =>{
+            if(currentUser){
+                readFanState();
+            }
+        },[currentUser])
+
     return (
         <div className="system_temp">
             <div className="control_btn">
                 <p className="airConditioner">Air Conditioner</p>
-                <SwitchComponent />
+                <SwitchComponent isOn={fan} onToggle={toggleFan}/>
             </div>
             <div className="temp_read">
                 <h3 id="temp_value">24°C</h3>

@@ -6,33 +6,14 @@ import logo from '../../images/logo.png'
 import support_img from '../../images/help.png'
 import setting_img from '../../images/setting-2.png'
 import { useAuth } from '../context/AuthProvider'
-import { getDatabase, ref, set,onValue } from "firebase/database";
+import Grid from '@mui/material/Grid';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import HistoryIcon from '@mui/icons-material/History';
+import SettingsIcon from '@mui/icons-material/Settings';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 function Sidebar() {
     const {currentUser,logout} = useAuth();
-    const db = getDatabase();
-    const [leds, setLeds] = useState({led1: false, led2: false});
-
-    const writeLedState = (ledName, state) => {
-        if(currentUser){
-            set(ref(db, `users/${currentUser.uid}/leds/${ledName}`), state)
-            .then(() =>{
-                console.log(`${ledName} state updated to ${state}`);
-            })
-            .catch((error)=>{
-                console.error("Error writing LED state: ", error);
-            })
-    }
-    }
-
-    const toggleLed = (ledName) =>{
-        setLeds(prev => {
-            const newState = !prev[ledName];
-            writeLedState(ledName, newState);
-            return{...prev, [ledName]:newState};
-        })
-    }
-
 
  return (
     <div>
@@ -42,32 +23,20 @@ function Sidebar() {
         </div>
         <div className="options">
             <div className="option active">
-                <picture className='picture_option'><img className='img_option' src={dashboard_option_img} alt="dashboard_option" /></picture>
+                <Grid> <DashboardIcon sx={{width:'2rem',height:'2rem',color:'#A1FFFF'}} /> </Grid>
                 <p>Dashboard</p>
             </div>
             <div className="option">
-                <picture className='picture_option'><img className='img_option' src={recent_img} alt="recent_img" /></picture>
+                <Grid> <HistoryIcon sx={{width:'2rem',height:'2rem',color:'#A1FFFF'}} /> </Grid>
                 <p>Recent</p>
             </div>
             <div className="option">
-                <picture className='picture_option'><img className='img_option' src={support_img} alt="support_img" /></picture>
-                <p>Support</p>
-            </div>
-            <div className="option">
-                <picture className='picture_option'><img className='img_option' src={setting_img} alt="setting_img" /></picture>
+                <Grid> <SettingsIcon sx={{width:'2rem',height:'2rem',color:'#A1FFFF'}} /> </Grid>
                 <p>Setting</p>
             </div>
-            <div className="options">
-                <div className="led-controls">
-                    <div>
-                        <label>LED1 1: {leds.led1 ? 'ON' : 'OFF'}</label>
-                        <button onClick={() => toggleLed('led1')} className='p-2 bg-red-500 ml-2 mb-2 rounded-sm cursor-pointer'>Toggle LED 1</button>
-                    </div>
-                    <div>
-                        <label>LED1 1: {leds.led2 ? 'ON' : 'OFF'}</label>
-                        <button onClick={() => toggleLed('led2')} className='p-2 bg-red-500 ml-2 mb-2 rounded-sm cursor-pointer'>Toggle LED 2</button>
-                    </div>
-                </div>
+            <div className="option">
+                <Grid> <LogoutIcon sx={{width:'2rem',height:'2rem',color:'#A1FFFF'}} /> </Grid>
+                <p>Logout</p>
             </div>
         </div>
     </div>
