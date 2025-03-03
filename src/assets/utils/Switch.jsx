@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import ReactSwitch from "react-switch";
+import { useAuth } from "../components/context/AuthProvider";
 
-export default function SwitchComponent({ isOn, onToggle }) {
+function  SwitchComponent({ isOn, onToggle }) {
   const [checked, setChecked] = useState(isOn);
+  const {currentUser} = useAuth();
 
   useEffect(() => {
     setChecked(isOn);
@@ -37,3 +39,5 @@ export default function SwitchComponent({ isOn, onToggle }) {
     </div>
   );
 }
+
+export default SwitchComponent;

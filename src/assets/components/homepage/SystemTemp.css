@@ -6,9 +6,9 @@
 }
 
 .system_temp{
-    width: 20%;
+    width: 20rem;
     padding: 2rem;
-    background-color: #252525;
+    border: 2px solid #EDBAFF;
     border-radius: 15px;
     height: 30vh;
 }
