@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20rem;
-    padding: 2rem;
+    width: 18rem;
+    padding: 1rem;
     border: 2px solid #EDBAFF;
     border-radius: 15px;
-    height: 30vh;
+    height: 25vh;
 }
 .btn_control{
     display: flex;
@@ -24,18 +24,7 @@
     justify-content: center;
     gap: 10px;
 }
-.humidity_picture{
-    width: 2rem;
-    aspect-ratio: 1/1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: linear-gradient(to right ,#A1FFFF,#EDBAFF);
-}
-.humidity_img{
-    width: 1.5rem;
-}
+
 #humidity_value{
     font-size: 2rem;
     background: linear-gradient(to right, #A1FFFF, #EDBAFF);

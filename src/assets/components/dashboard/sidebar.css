@@ -4,7 +4,7 @@
     gap: 1rem;
     position: relative;
     margin-bottom: 1rem;
-    padding: 10px;
+    padding: 1rem;
 }
 .logo::after{
     content: "";
@@ -17,13 +17,6 @@
 }
 .title_logo{
     font-size: 1.7rem;
-}
-.picture_logo{
-    width: 80px;
-    aspect-ratio: 1/1;
-}
-.img_logo{
-    width: 100%;
 }
 .options{
     display: flex;

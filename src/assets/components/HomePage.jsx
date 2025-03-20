@@ -1,21 +1,51 @@
-import React from 'react'
-import Header from './homepage/Header';
-import Devices from './homepage/Devices';
-import SystemHumidity from './homepage/SystemHumidity';
-import SystemTemp from './homepage/SystemTemp';
-import Using from './Using';
-import Sidebar from './homepage/Sidebar';
+import React, { useState } from 'react'
+import Sidebar from './dashboard/Sidebar';
+import Dashboard from './Dashboard';
+import Recent from './Recent';
+import Setting from './Setting';
 
 function HomePage() {
+
+  const [activeDashboard ,setActiveDashboard] = useState(true);
+  const [activeRecent ,setActiveRecent] = useState(false);
+  const [activeSetting ,setActiveSetting] = useState(false);
+  const [activePage , setActivePage] = useState('');
+  
+  const handleClick = (e) =>{
+    const clickedElement = e.target.closest('p');
+    if(clickedElement){
+      const pageName = clickedElement.textContent;
+      setActivePage(pageName);
+
+      setActiveRecent(false);
+      setActiveSetting(false);
+      setActiveDashboard(false);
+
+      switch(pageName){
+        case 'Dashboard' :
+          setActiveDashboard(true);
+          break;
+        case 'Recent':
+          setActiveRecent(true);
+          break;
+        case 'Setting':
+          setActiveSetting(true);
+          break;
+        default:
+          setActiveDashboard(true);
+      }
+    }
+  }
+
   return (
     <>
-      <aside>
+      <aside onClick={handleClick}>
         <Sidebar />
       </aside>
       <main>
-        <Header />
-        <Using />
-        <Devices />
+        {activeDashboard && <Dashboard/>}
+        {activeRecent && <Recent />}
+        {activeSetting && <Setting />}
       </main> 
     </>
   )
