@@ -12,12 +12,11 @@
 }
 aside{
   width: 18%;
-  height: auto;
+  height: 100vh;
   border-right: 1px solid #EDBAFF;
 }
 main{
   display: flex;
   flex-direction: column;
   width: 82%;
-  min-height: 100vh;
 }
