@@ -1,33 +1,36 @@
-OverView
-🔑 Login & Signup Page
+## 📖 Overview  
 
-Secure user authentication using Firebase Auth
-Allows creating new accounts and logging in existing users
-Validates input fields for security and usability
+### 🔑 Login & Signup Page  
+- Secure user authentication using **Firebase Auth**  
+- Allows creating new accounts and logging in existing users  
+- Validates input fields for security and usability  
 
-![Login Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/login.jpg)
-![signup Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/signup.jpg)
+![Login Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/login.jpg)  
+![Signup Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/signup.jpg)  
 
-🏠 Dashboard Page
+---
 
-Central hub that shows real-time device status
-Displays total power consumption at a glance
-Provides quick navigation to other sections
+### 🏠 Dashboard Page  
+- Central hub that shows **real-time device status**  
+- Displays **total power consumption** at a glance  
+- Provides quick navigation to other sections  
 
-![Dashboard Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/dashboard.jpg)
+![Dashboard Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/dashboard.jpg)  
 
-📊 Recent (History & Cost Analysis)
+---
 
-Shows the history of power usage in daily and monthly charts
-Visualizes energy costs for better tracking and optimization
-Uses Chart.js for interactive analytics
-Provides Latest Alerts 
+### 📊 Recent (History & Cost Analysis)  
+- Shows the **history of power usage** in daily and monthly charts  
+- Visualizes **energy costs** for better tracking and optimization  
+- Provides **latest alerts**  
+- Built with **Chart.js** for interactive analytics  
 
-![Recent Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/recent.jpg)
+![Recent Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/recent.jpg)  
 
-⚙️ Settings Page
+---
 
-Displays user information (email, name, API key)
-Includes option to change password securely
+### ⚙️ Settings Page  
+- Displays user information (**email, name, API key**)  
+- Includes option to **change password securely**  
 
-![Settings Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/setting.jpg)
+![Settings Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/setting.jpg)  
