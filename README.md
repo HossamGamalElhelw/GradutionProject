@@ -1,8 +1,37 @@
-# React + Vite
+OverView
+🔑 Login & Signup Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Secure user authentication using Firebase Auth
 
-Currently, two official plugins are available:
+Allows creating new accounts and logging in existing users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Validates input fields for security and usability
+![Login Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/login.jpg)
+![signup Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/signup.jpg)
+
+🏠 Dashboard Page
+
+Central hub that shows real-time device status
+
+Displays total power consumption at a glance
+
+Provides quick navigation to other sections
+![Dashboard Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/dashboard.jpg)
+
+📊 Recent (History & Cost Analysis)
+
+Shows the history of power usage in daily and monthly charts
+
+Visualizes energy costs for better tracking and optimization
+
+Uses Chart.js for interactive analytics
+![Recent Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/recent.jpg)
+
+⚙️ Settings Page
+
+Displays user information (email, name, API key)
+
+Allows updating personal details
+
+Includes option to change password securely
+![Settings Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/settings.jpg)
