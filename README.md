@@ -1,11 +1,11 @@
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-# Frontend:
+## Frontend:
 -  React.js, React Router, React Context
-# Backend / Cloud: Firebase
+## Backend / Cloud: Firebase
   
-# Databases:
+## Databases:
 - Firebase Realtime Database (for device states & real-time power updates)
 - Firestore Database (for user info, monthly power consumption, and structured data)
 
