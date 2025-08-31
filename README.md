@@ -3,14 +3,16 @@
 
 ## Frontend:
 -  React.js, React Router, React Context
-## Backend / Cloud: Firebase
+## Backend / Cloud: 
+- Firebase
   
 ## Databases:
 - Firebase Realtime Database (for device states & real-time power updates)
 - Firestore Database (for user info, monthly power consumption, and structured data)
-
-- Authentication: Firebase Auth
-- Charts & UI: Chart.js, Tailwind CSS, Material Icons
+### Authentication:
+- Firebase Auth
+### Charts & UI:
+- Chart.js, Tailwind CSS, Material Icons
 
 ## 📖 Overview  
 
