@@ -50,3 +50,7 @@
 - Includes option to **change password securely**  
 
 ![Settings Screenshot](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/setting.jpg)  
+
+### 🏠 Model
+![Model](https://github.com/HossamGamalElhelw/GradutionProject/blob/main/public/model.jpg)  
+
